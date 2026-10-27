@@ -1,0 +1,41 @@
+{
+  "name": "dsh-pet-sound",
+  "version": "0.1.0",
+  "description": "Add a soft click sound to the DeepSeek Harness desktop pet (dsh-pet) — idempotent apply / revert CLI.",
+  "type": "module",
+  "bin": {
+    "dsh-pet-sound": "bin/dsh-pet-sound.js"
+  },
+  "exports": {
+    ".": "./src/patch.js",
+    "./snippet": "./src/snippet.js"
+  },
+  "files": [
+    "bin",
+    "src",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "node --test",
+    "lint": "node --check bin/dsh-pet-sound.js && node --check src/patch.js && node --check src/snippet.js"
+  },
+  "engines": {
+    "node": ">=18.17"
+  },
+  "keywords": [
+    "dsh",
+    "deepseek-harness",
+    "dsh-pet",
+    "desktop-pet",
+    "sound",
+    "cli",
+    "patcher"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/d-dev0101/dsh-pet-sound.git"
+  },
+  "author": "六月风"
+}

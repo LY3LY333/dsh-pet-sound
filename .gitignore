@@ -1,0 +1,17 @@
+# dependencies
+node_modules/
+
+# patch backups produced at runtime
+*.bak
+*.dsh-pet-sound.*.bak
+
+# logs / coverage
+*.log
+coverage/
+.nyc_output/
+
+# editor / OS noise
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
