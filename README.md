@@ -1,5 +1,9 @@
 # dsh-pet-sound
 
+[![CI](https://github.com/LY3LY333/dsh-pet-sound/actions/workflows/ci.yml/badge.svg)](https://github.com/LY3LY333/dsh-pet-sound/actions/workflows/ci.yml)
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![Node.js](https://img.shields.io/badge/node-%E2%89%A518.17-brightgreen.svg)](package.json)
+
 给 **DSH 桌面桌宠（dsh-pet）** 加上点击音效的小工具。幂等、可回滚、不改任何 DSH 配置。
 
 > A tiny, idempotent patcher that gives the [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) desktop pet (`dsh-pet`) a soft click sound — no asset files, no DSH config changes, fully reversible.
