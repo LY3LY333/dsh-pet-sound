@@ -1,6 +1,7 @@
 # dsh-pet-sound
 
 [![CI](https://github.com/LY3LY333/dsh-pet-sound/actions/workflows/ci.yml/badge.svg)](https://github.com/LY3LY333/dsh-pet-sound/actions/workflows/ci.yml)
+[![npm](https://img.shields.io/npm/v/dsh-pet-sound.svg)](https://www.npmjs.com/package/dsh-pet-sound)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Node.js](https://img.shields.io/badge/node-%E2%89%A518.17-brightgreen.svg)](package.json)
 
@@ -31,15 +32,19 @@
 ## 安装
 
 ```bash
+npx dsh-pet-sound status     # 直接用，不用安装
+
+# 或者克隆下来
 git clone https://github.com/LY3LY333/dsh-pet-sound.git
 cd dsh-pet-sound
+node bin/dsh-pet-sound.js status
 ```
 
-要求 Node.js ≥ 18.17，零第三方依赖。（尚未发布到 npm，所以请用下面的本地命令。）
+要求 Node.js ≥ 18.17，零第三方依赖。已发布到 npm：<https://www.npmjs.com/package/dsh-pet-sound>
 
 ## 使用
 
-下文的 `dsh-pet-sound` 都指 `node bin/dsh-pet-sound.js`，也可以先 `npm link` 再直接用命令名。
+下文命令里的 `dsh-pet-sound` 可以直接换成 `npx dsh-pet-sound`；克隆后则用 `node bin/dsh-pet-sound.js`。
 
 ```bash
 # 查看状态（不写入任何东西）
