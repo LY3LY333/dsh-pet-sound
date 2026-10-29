@@ -28,23 +28,34 @@
 | **多 profile** | 自动扫描 `$DSH_HOME/profiles/*`，也可 `--profile` 指定 |
 | **可脚本化** | `--dry-run` 预演、`--json` 机器可读输出 |
 
+## 安装
+
+```bash
+git clone https://github.com/LY3LY333/dsh-pet-sound.git
+cd dsh-pet-sound
+```
+
+要求 Node.js ≥ 18.17，零第三方依赖。（尚未发布到 npm，所以请用下面的本地命令。）
+
 ## 使用
+
+下文的 `dsh-pet-sound` 都指 `node bin/dsh-pet-sound.js`，也可以先 `npm link` 再直接用命令名。
 
 ```bash
 # 查看状态（不写入任何东西）
-npx dsh-pet-sound status
+node bin/dsh-pet-sound.js status
 
 # 打补丁（默认音量 0.16）
-npx dsh-pet-sound apply
+node bin/dsh-pet-sound.js apply
 
 # 自定义音量（0 < v <= 1）
-npx dsh-pet-sound apply --volume 0.1
+node bin/dsh-pet-sound.js apply --volume 0.1
 
 # 只预演，不写文件
-npx dsh-pet-sound apply --dry-run
+node bin/dsh-pet-sound.js apply --dry-run
 
 # 撤销
-npx dsh-pet-sound revert
+node bin/dsh-pet-sound.js revert
 ```
 
 打完补丁后 **重启桌宠** 才会生效（右键桌宠 → 重载配置，或重启 DSH）。
@@ -52,7 +63,7 @@ npx dsh-pet-sound revert
 指定 profile：
 
 ```bash
-npx dsh-pet-sound apply --profile "C:\Users\you\.dsh\profiles\desktop"
+node bin/dsh-pet-sound.js apply --profile "C:\Users\you\.dsh\profiles\desktop"
 ```
 
 ### 输出示例
